@@ -1,4 +1,4 @@
-console.log('Hola Mundo!');
+console.log('Hola Mundo!')
 
 /*
     Type of data
@@ -19,7 +19,7 @@ console.log('Hola Mundo!');
     it's actually created
 */
 
-if(true) {
+if (true) {
     var varVariable = 'This is true'
     var varVariable = 'This is false' // You can redefine a var variable
 
@@ -34,21 +34,21 @@ if(true) {
 }
 
 // var myVar = 'lala' // The interpreter will put this type of vars on the top, should not use
-let myVar: string = 'My first variable';
-console.log(myVar);
+let myVar: string = 'My first variable'
+console.log(myVar)
 
-myVar = 'Changing the value of a variable is called mutability';
-console.log(myVar);
+myVar = 'Changing the value of a variable is called mutability'
+console.log(myVar)
 
 // Boolean
-let myBoolean = true;
-let myOtherBoolean = false;
+let myBoolean = true
+let myOtherBoolean = false
 
-let myNum0 = 0;
-let myNum1 = 12;
-let myNum2 = -23;
+let myNum0 = 0
+let myNum1 = 12
+let myNum2 = -23
 
-console.log(myNum0, myNum1, myNum2, myBoolean, myOtherBoolean, myVar);
+console.log(myNum0, myNum1, myNum2, myBoolean, myOtherBoolean, myVar)
 
 // Undefined
 // let undef;
@@ -56,7 +56,7 @@ console.log(myNum0, myNum1, myNum2, myBoolean, myOtherBoolean, myVar);
 
 // Null
 let nulo = null
-console.log(nulo);
+console.log(nulo)
 
 // Objects
 const myFirstObject = {}
@@ -72,13 +72,13 @@ console.log(myObj.aNumber)
 
 // Array
 const anEmpytArray = []
-const anArray = ["chanchito", 1, 3, myObj];
+const anArray = ['chanchito', 1, 3, myObj]
 
 // console.log(anEmptyArray);
 // console.log(anArray);
 
 anArray.push(5)
-console.log(anArray, anEmpytArray);
+console.log(anArray, anEmpytArray)
 
 // Basic math
 const suma = 1 + 2
@@ -94,10 +94,10 @@ let increment_decrement = 5
 
 increment_decrement++
 increment_decrement--
-increment_decrement+=3
-increment_decrement-=3
-increment_decrement*=5
-increment_decrement/=10
+increment_decrement += 3
+increment_decrement -= 3
+increment_decrement *= 5
+increment_decrement /= 10
 console.log(increment_decrement)
 console.log(`${increment_decrement}`)
 
@@ -109,19 +109,19 @@ console.log(`${increment_decrement}`)
 // arg1 is a parameter
 function iterar(arg1: any) {
     for (let i = 0; i < arg1.length; i++) {
-        console.log(`${arg1[i]}`);
+        console.log(`${arg1[i]}`)
     }
 }
 
-const numeros = [1, 2, 'Hola', 4, 5];
-const nombres = ['Pedro', 'Juan', 'Felipe', 'Chanchito Feliz'];
+const numeros = [1, 2, 'Hola', 4, 5]
+const nombres = ['Pedro', 'Juan', 'Felipe', 'Chanchito Feliz']
 iterar(numeros) // numeros is an argument
 iterar(nombres)
 
 function sumados(a: any, b: any) {
-    return a + b;
+    return a + b
 }
-const resultadoSumaDos = sumados(1, 2);
+const resultadoSumaDos = sumados(1, 2)
 console.log('resultado', resultadoSumaDos)
 
 // Callbacks
@@ -132,14 +132,14 @@ function callbacksumar(a: any, b: any, cb: any) {
 
 // Function declaration
 function callback(result: any) {
-    console.log('resultado', result);
+    console.log('resultado', result)
 }
 callbacksumar(2, 3, callback)
 
 // Function expression
-const speak = function(){
-    console.log('Good day!');
-}; // We should put a ; at the end of code block, when we use a function expression
+const speak = function () {
+    console.log('Good day!')
+} // We should put a ; at the end of code block, when we use a function expression
 
 speak()
 
@@ -157,7 +157,7 @@ speak()
 // console.log(area);
 
 // Arrow function, one liner
-const calcArea = (radius:number) => 3.14 * radius**2;
+const calcArea = (radius: number) => 3.14 * radius ** 2
 
-const area = calcArea(5);
-console.log(area);
+const area = calcArea(5)
+console.log(area)

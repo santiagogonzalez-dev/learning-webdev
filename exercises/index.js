@@ -56,7 +56,7 @@ console.log(myObj);
 console.log(myObj.aNumber);
 // Array
 var anEmpytArray = [];
-var anArray = ["chanchito", 1, 3, myObj];
+var anArray = ['chanchito', 1, 3, myObj];
 // console.log(anEmptyArray);
 // console.log(anArray);
 anArray.push(5);
@@ -123,7 +123,7 @@ speak();
 // }
 // const area = calcArea(5);
 // console.log(area);
-// Arrow function
+// Arrow function, one liner
 var calcArea = function (radius) { return 3.14 * Math.pow(radius, 2); };
 var area = calcArea(5);
 console.log(area);
