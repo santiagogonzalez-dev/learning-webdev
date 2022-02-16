@@ -10,47 +10,75 @@
         />
         <meta name="author" content="Santiago Gonzalez" />
         <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+            rel="stylesheet"
+        />
+
         <title>Basic Website Layout</title>
     </head>
+
     <body>
-        <header>My first website</header>
+        <header>I want to be a frontend developer :P</header>
 
-        <div class="container">
-            <section>
-                <h1>This is the main content are of this page</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, qui minim labore adipisicing
-                    minim sint cillum sint consectetur cupidatat.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                    reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-                    mollit ex esse exercitation amet. Nisi anim cupidatat
-                    excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem
-                    est aliquip amet voluptate voluptate dolor minim nulla est
-                    proident. Nostrud officia pariatur ut officia. Sit irure
-                    elit esse ea nulla sunt ex occaecat reprehenderit commodo
-                    officia dolor Lorem duis laboris cupidatat officia
-                    voluptate. Culpa proident adipisicing id nulla nisi laboris
-                    ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit
-                    commodo ex non excepteur duis sunt velit enim. Voluptate
-                    laboris sint cupidatat ullamco ut ea consectetur et est
-                    culpa et culpa duis.
-                </p>
-            </section>
-
-            <aside>
-                <h2>This is my sidebar</h2>
-                <ol>
-                    <li>List item one</li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                </ol>
-            </aside>
+        <!-- the nav is sticky so I'm not going to put it inside <header> -->
+        <div id="navbar">
+            <a href="#aboutme">About Me</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
         </div>
+
+        <!-- This is were the 'about me' card is in -->
+        <div class="main">
+            <div class="user-card">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img
+                            src="macri.jpg"
+                            alt="mauricio macri"
+                        />
+                    </div>
+                </div>
+
+                <div class="card-text">
+                    <h4>Hello!</h4>
+                    <h1>Santiago Gonzalez</h1>
+                    <p>
+                        I'm a software developer interested in
+                        <strong>FOSS</strong>, <strong>Unix</strong>
+                        and computers, looking for my first job in the IT world.
+                    </p>
+                    <h3><- No this is not me lol</h2>
+                </div>
+            </div>
+        </div>
+
+        <section class='blue'>
+            <h1>Nice Curves</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio itaque tempore eligendi aliquam doloribus, magnam ut velit animi quibusdam excepturi! Praesentium facere quia voluptatem maiores dolorem commodi quasi accusantium ut.</p>
+            <div class="curve"></div>
+        </section>
+        <section class='red'>
+            <h1>Nice Curves</h1>
+            <p>Saepe aspernatur ullam incidunt, sapiente nostrum animi, nam qui debitis maiores totam est, magni sed! Repellendus harum nesciunt dignissimos molestias esse soluta, quasi exercitationem libero alias consequatur blanditiis totam dolore!</p>
+        </section>
+        <section class='pink'>
+            <h1>Nice Curves</h1>
+            <p>Ad accusamus quisquam nisi quod iste laboriosam corporis cumque doloremque, eum, corrupti omnis, obcaecati aspernatur excepturi porro veritatis! Molestias blanditiis velit perferendis, sequi qui recusandae in earum nemo nam amet!</p>
+        </section>
+        <section class='dark'>
+            <h1>Nice Curves</h1>
+            <p>Dolores laborum delectus recusandae sequi ipsa velit debitis officia officiis ad impedit, nobis voluptas, modi aliquid, facere esse. Atque quia voluptates saepe fugit repellat necessitatibus officiis dicta eaque, porro ad.</p>
+        </section>
 
         <footer>
             <p>Flexitarion blog truffaut typewriter</p>
         </footer>
+
+        <script src="app.js"></script>
     </body>
 </html>

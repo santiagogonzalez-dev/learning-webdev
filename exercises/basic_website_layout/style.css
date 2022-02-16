@@ -1,39 +1,126 @@
-body {
-    background: #cde7b0;
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-size: 18px;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: #7286a0; /* Background color of the entire page */
+    font-family: Iosevka, 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    height: 70%;
+}
+
+/* Nav Bar */
+#navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #1f1d2e;
+    margin: 0px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#navbar a {
+    text-decoration: none; /* This shows text cleanly */
+    font-size: 18px;
+    letter-spacing: 1px; /* Spaced out the letters a bit */
+    box-sizing: border-box;
+    display: inline-block;
+    color: #e0def4;
+    text-align: center;
+    padding: 13px 10px;
+}
+
+/* Colors applied when hovering with the mouse through the buttons */
+#navbar a:hover {
+    background: #26233a;
+    color: #31748f;
+}
+/* Nav Bar */
+
+.main {
+    height: 100%;
+    min-height: 70%;
+    background: #191724;
+    display: flex;
+    align-items: center;
+}
+
+.user-card {
+    background-color: #1f1d2e;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.3rem;
+    color: #e0def4;
+    border-radius: 1rem;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #26233a;
+    position: relative;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 header {
-    background: #59594a;
-    padding-top: 50px; /* This fixes the text/colors not touching the margins */
-    padding-bottom: 50px;
+    padding-top: 60px; /* This fixes the text/colors not touching the margins */
+    padding-bottom: 60px;
     text-align: center;
-    color: #fff;
+    color: #9ccfd8;
+    background-color: #191724;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    font-size: 33px;
 }
 
-.container {
-    width: 80%; /* Occupy only 80% of the width */
-    margin: 0 auto;
+h1 {
+    text-transform: uppercase;
 }
 
-section {
-    float: left;
-    width: 70%; /* 70% of my container */
-    margin-bottom: 100px;
-}
-
-aside {
-    float: right;
-    width: 25%;
+h4 {
+    color: #c4a7e7;
 }
 
 footer {
-    background-color: #7286a0;
+    background-color: peru;
     clear: both;
     padding: 50px 0;
     text-align: center;
+}
+
+section {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue {
+    background: #3c31dd;
+}
+.red {
+    background: #dd3f31;
+}
+
+.pink {
+    background: #ff0066;
+}
+
+.dark {
+    background: #0f0f10;
 }
