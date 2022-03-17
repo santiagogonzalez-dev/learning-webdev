@@ -4,20 +4,32 @@
     box-sizing: border-box;
 }
 
-body,
 html {
-    background: #7286a0; /* Background color of the entire page */
-    font-family: Iosevka, 'Roboto Condensed', sans-serif;
+    background: #191724; /* Background color of the entire page */
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     margin: 0;
     height: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #434867;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #26233a;
 }
 
 /* Nav Bar */
 #navbar {
     position: sticky;
+    font-family: 'Lato', sans-serif;
     top: 0px;
     background-color: #1f1d2e;
+    text-align: left;
     margin: 0px;
     overflow: hidden;
     z-index: 100;
@@ -25,7 +37,7 @@ html {
 
 #navbar a {
     text-decoration: none; /* This shows text cleanly */
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px; /* Spaced out the letters a bit */
     box-sizing: border-box;
     display: inline-block;
@@ -39,18 +51,10 @@ html {
     background: #26233a;
     color: #31748f;
 }
-/* Nav Bar */
-
-.main {
-    height: 100%;
-    min-height: 70%;
-    background: #191724;
-    display: flex;
-    align-items: center;
-}
+/* END Nav Bar */
 
 .user-card {
-    background-color: #1f1d2e;
+    background-color: #191724;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -59,7 +63,8 @@ html {
     gap: 2rem;
     padding: 2.3rem;
     color: #e0def4;
-    border-radius: 1rem;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
 
 .avatar {
@@ -67,7 +72,7 @@ html {
     height: 250px;
     overflow: hidden;
     border-radius: 50%;
-    border: 10px solid #26233a;
+    border: 13px solid #26233a;
     position: relative;
 }
 
@@ -85,10 +90,6 @@ header {
     background-color: #191724;
     text-transform: uppercase;
     font-size: 33px;
-}
-
-h1 {
-    text-transform: uppercase;
 }
 
 h4 {
@@ -110,9 +111,31 @@ section {
     padding: 100px 20vw;
 }
 
-.blue {
-    background: #3c31dd;
+.projects {
+    background: #434867;
 }
+
+.divide-curve1 {
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.divide-curve1 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 74px;
+}
+
+.divide-curve1 .shape-fill {
+    fill: #191724;
+}
+
 .red {
     background: #dd3f31;
 }
@@ -123,4 +146,32 @@ section {
 
 .dark {
     background: #0f0f10;
+}
+
+.row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.card {
+    max-width: 33.333%;
+    padding: 0.75rem;
+    margin-bottom: 4rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.card > img {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.card-text {
+    font-size: 85%;
 }

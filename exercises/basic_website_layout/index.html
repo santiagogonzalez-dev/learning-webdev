@@ -12,12 +12,9 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
 
         <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito&display=swap" rel="stylesheet">
 
         <title>Basic Website Layout</title>
     </head>
@@ -26,53 +23,121 @@
         <header>I want to be a frontend developer :P</header>
 
         <!-- the nav is sticky so I'm not going to put it inside <header> -->
-        <div id="navbar">
-            <a href="#aboutme">About Me</a>
+        <nav id="navbar">
+            <a href="./about.html">About Me</a>
             <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
-        </div>
+        </nav>
 
         <!-- This is were the 'about me' card is in -->
-        <div class="main">
-            <div class="user-card">
-                <div class="avatar-container">
-                    <div class="avatar">
-                        <img
-                            src="macri.jpg"
-                            alt="mauricio macri"
-                        />
-                    </div>
+        <div class="user-card">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img src="macri.jpg" alt="mauricio macri" />
                 </div>
+            </div>
 
-                <div class="card-text">
-                    <h4>Hello!</h4>
-                    <h1>Santiago Gonzalez</h1>
-                    <p>
-                        I'm a software developer interested in
-                        <strong>FOSS</strong>, <strong>Unix</strong>
-                        and computers, looking for my first job in the IT world.
-                    </p>
-                    <h3><- No this is not me lol</h2>
-                </div>
+            <div class="card-text">
+                <h4>Hello!</h4>
+                <h1>I'm Santiago Gonzalez</h1>
+                <p>
+                    A software developer interested in
+                    <strong>FOSS</strong>, <strong>Unix</strong>
+                    and computers, looking for my first job in the IT world.
+                </p>
+                <h2><- Change this picture of Macri</h2>
+                <h3>You can learn more about me below</h3>
             </div>
         </div>
 
-        <section class='blue'>
-            <h1>Nice Curves</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio itaque tempore eligendi aliquam doloribus, magnam ut velit animi quibusdam excepturi! Praesentium facere quia voluptatem maiores dolorem commodi quasi accusantium ut.</p>
-            <div class="curve"></div>
+        <section class="projects">
+            <div class="divide-curve1">
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
+            </div>
+            <h1>Projects</h1>
+            <h2>Self Introduction</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                itaque tempore eligendi aliquam doloribus, magnam ut velit animi
+                quibusdam excepturi! Praesentium facere quia voluptatem maiores
+                dolorem commodi quasi accusantium ut.
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200" />
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200" />
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200" />
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200" />
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class='red'>
+
+        <section class="red">
             <h1>Nice Curves</h1>
-            <p>Saepe aspernatur ullam incidunt, sapiente nostrum animi, nam qui debitis maiores totam est, magni sed! Repellendus harum nesciunt dignissimos molestias esse soluta, quasi exercitationem libero alias consequatur blanditiis totam dolore!</p>
+            <p>
+                Saepe aspernatur ullam incidunt, sapiente nostrum animi, nam qui
+                debitis maiores totam est, magni sed! Repellendus harum nesciunt
+                dignissimos molestias esse soluta, quasi exercitationem libero
+                alias consequatur blanditiis totam dolore!
+            </p>
         </section>
-        <section class='pink'>
+
+        <section class="pink">
             <h1>Nice Curves</h1>
-            <p>Ad accusamus quisquam nisi quod iste laboriosam corporis cumque doloremque, eum, corrupti omnis, obcaecati aspernatur excepturi porro veritatis! Molestias blanditiis velit perferendis, sequi qui recusandae in earum nemo nam amet!</p>
+            <p>
+                Ad accusamus quisquam nisi quod iste laboriosam corporis cumque
+                doloremque, eum, corrupti omnis, obcaecati aspernatur excepturi
+                porro veritatis! Molestias blanditiis velit perferendis, sequi
+                qui recusandae in earum nemo nam amet!
+            </p>
         </section>
-        <section class='dark'>
+
+        <section class="dark">
             <h1>Nice Curves</h1>
-            <p>Dolores laborum delectus recusandae sequi ipsa velit debitis officia officiis ad impedit, nobis voluptas, modi aliquid, facere esse. Atque quia voluptates saepe fugit repellat necessitatibus officiis dicta eaque, porro ad.</p>
+            <p>
+                Dolores laborum delectus recusandae sequi ipsa velit debitis
+                officia officiis ad impedit, nobis voluptas, modi aliquid,
+                facere esse. Atque quia voluptates saepe fugit repellat
+                necessitatibus officiis dicta eaque, porro ad.
+            </p>
         </section>
 
         <footer>
